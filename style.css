@@ -1,0 +1,88 @@
+#bloque1 {
+  height: 70px;
+  width: 70px;
+  position:relative;
+  left: 800px;
+  top:300px;
+
+  animation-name: marioanimacion;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marioanimacion {
+  0%{}
+  25%{top: 270px;}
+  50%{top:270px;}
+  75%{top: 270;}
+  100%{top: 300px;}
+}
+
+body {
+  background: rgb(78, 78, 78);
+}
+
+
+#bloque2 {
+  height: 70px;
+  width: 70px;
+  position:relative;
+  left: 800px;
+  top:300px; 
+}
+#moneda {
+  height: 45px;
+  width: 35px;
+  position:relative;
+  left:818px;
+  top:165px;
+  animation: moneda;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  display: none;
+}
+
+@keyframes moneda {
+  0%{}
+  50%{top:100px;}
+  100%{top:150px;}
+}
+#texto_p {
+  color:white;
+  display:none;
+}
+#score {
+  color:white;
+  font-size: 20px;
+}
+#mario_quieto {
+  height: 140px;
+  width: 140px;
+  position:relative;
+  left: 760px;
+  top:450px;
+}
+#mario_saltando {
+  height: 75px;
+  width: 75px;
+  position:relative;
+  left: 800px;
+  top:450px;
+  display:none;
+
+  animation-name: mario_salto;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+} 
+
+@keyframes mario_salto {
+  0%{}
+  25%{top:230px;}
+  50%{top:230px;}
+  75%{top:230px;}
+  100%{top:230px;}
+}
+#mario_mapa {
+  height: 900px;
+  width: 1900px;
+}
